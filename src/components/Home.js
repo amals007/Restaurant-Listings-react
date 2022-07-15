@@ -1,5 +1,7 @@
 import React from "react";
 import { useState, useEffect } from "react";
+import { Row,Col} from 'react-bootstrap'
+import RestaurantCard from "./RestaurantCard";
 
 function Home() {
   const [restaurants, setRestaurants] = useState([]);
@@ -14,16 +16,15 @@ function Home() {
 
   console.log('My data is',restaurants);
   return (
-    <div>
+    <Row>
       {restaurants.map((item) => (
-        <div>
-            <h1>
-                {item.name}
-                
-            </h1>
-        </div>
+        
+            <Col sm={12} md={8} lg={6} xl={3}>
+                <RestaurantCard item={item} />
+            </Col>
+        
       ))}
-    </div>
+    </Row>
   );
 }
 
