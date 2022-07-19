@@ -14,7 +14,7 @@ function Home() {
     fetchData();
   }, []);
 
-  console.log("My data is", restaurants);
+ 
   return (
     <Row>
       {restaurants.map((item) => (
