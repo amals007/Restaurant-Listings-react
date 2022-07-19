@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { useParams } from "react-router-dom";
+import { useParams, Link } from "react-router-dom";
 import { Row, Col, ListGroup, Image, Card } from "react-bootstrap";
 import Review from './Review'
 function RestaurantData() {
@@ -18,6 +18,7 @@ function RestaurantData() {
 
   return (
     <>
+    <Link className="btn btn-outline-dark my-2 rounded btn-sm" to='/'>Back</Link>
       {restaurantData ? (
         <Row className="my-3">
           <Col md={3}>
