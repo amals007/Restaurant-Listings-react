@@ -18,9 +18,9 @@ function RestaurantData() {
 
   return (
     <>
-    <Link className="btn btn-outline-dark my-2 rounded btn-sm" to='/'>Back</Link>
+    <Link className="btn btn-outline-dark my-2 rounded btn-sm mx-3" to='/'>Back</Link>
       {restaurantData ? (
-        <Row className="my-3">
+        <Row className="my-3 mx-3">
           <Col md={3}>
             <Image
               className="img"

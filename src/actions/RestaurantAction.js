@@ -4,7 +4,7 @@ RESTAURANT_LIST_SUCCESS} from '../constants/restaurantConstant'
 
 import axios from 'axios'
 
-export const listRestaurant = () => async(dispatch) =>{
+export const listRestaurants = () => async(dispatch) =>{
 
     try{
         const {data} = await axios.get('/restaurants.json')
